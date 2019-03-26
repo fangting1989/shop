@@ -9,7 +9,11 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
 
-    current:1
+    current:1,
+    user: null,
+    username: '',
+    password: '',
+    error: null,
   },
   //事件处理函数
   bindViewTap: function() {
@@ -51,6 +55,11 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  goMain:function(){
+    wx.navigateTo({
+      url: '../main/index'
     })
   }
 })

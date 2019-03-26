@@ -1,68 +1,23 @@
-<View class='content'>
-        <View class='logo_bg'>
-          <Image mode='aspectFit'
-                 class='logo'
-                 src='/images/octocat.png'/>
-        </View>
-        <View class='login_content'>
-          <View class='switch_view'>
-            <View class="{{current === 0 ? 'selected_title' : 'normal_title'}}"
-                  bindtap="TokenClick">
-              Token
-            </View>
-            <View class="{{current === 1 ? 'selected_title' : 'normal_title'}}"
-                  bindtap="AccountClick">
-              Account
-            </View>
-          </View>
-          <!-- {current === 0 ?
-              <View class='input_view'>
-                <AtInput
-                  class='input_bar'
-                  name='token'
-                  title='Token:'
-                  type='text'
-                  placeholder='please input token'
-                  value={this.state.token}
-                  onChange={this.handleTokenChange.bind(this)} />
-              </View>
-              : (<View class='input_view'>
-                <AtInput
-                  class='input_bar'
-                  name='username'
-                  title='Username:'
-                  type='text'
-                  placeholder='please input username'
-                  value={this.state.username}
-                  onChange={this.handleUsernameChange.bind(this)} />
-                <AtInput
-                  class='input_bar'
-                  name='password'
-                  title='Password:'
-                  type='password'
-                  placeholder='please input password'
-                  value={this.state.password}
-                  onChange={this.handlePasswordChange.bind(this)} />
-              </View>
-            )
-          } -->
-          <View class='login_button'
-                >
-            Login
-          </View>
-        </View>
-        <View class='info_view'>
-          <Text class='info_text'>
-            1、由于小程序的限制，无法使用OAuth跳转认证，推荐使用Token认证方式；
-          </Text>
-          <Text class='info_text'>
-            2、Token及用户名密码仅用于GitHub Api权限校验，不会被上传服务器；
-          </Text>
-          <Text class='info_text'>
-            3、Token的生成方式请点击复制以下地址至浏览器打开，按照步骤即可生成Token
-          </Text>
-          <View class='token_address'>
-            https://github.com/settings/tokens/new
-          </View>
-        </View>
-      </View>
+<!-- <view>
+ <van-button type="default" bind:click="goMain">跳转到首页</van-button>
+<van-button type="primary">主要按钮</van-button>
+<van-button type="info">信息按钮</van-button>
+<van-button type="warning">警告按钮</van-button>
+<van-button type="danger">危险按钮</van-button>
+</view> -->
+
+<view class="container">
+  <view class="form-wrap">
+    <view class="flex-wrap input-wrap">
+      <text class="label">用户名</text>
+      <input value="{{user.username}}" bindinput="updateUsername" id="username" class="account-info-input"/>
+    </view>
+    <view class="flex-wrap input-wrap">
+      <text class="label">新密码</text>
+      <input password bindinput="updatePassword" id="password" class="account-info-input"/>
+    </view>
+  </view>
+  <text wx:if="{{error}}" class="error">{{error}}</text>
+  <van-button type="primary" size="large" bind:click="goMain">登入</van-button>
+  
+</view>
