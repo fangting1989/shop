@@ -1,0 +1,29 @@
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+
+<van-row>
+  <van-col span="6"></van-col>
+  <van-col span="6">品名</van-col>
+  <van-col span="6">单位</van-col>
+  <van-col span="6">价格</van-col>
+</van-row>
+
+<van-row wx:for="{{goods}}" wx:for-item="goods" wx:key="id">
+  <van-col span="6"><image class='goods-pic' mode='aspectFill' lazy-load="true" src="{{goods.pic}}"></image></van-col>
+  <van-col span="6">{{goods.name}}</van-col>
+  <van-col span="6">斤</van-col>
+  <van-col span="6">{{goods.minPrice}}</van-col>
+</van-row>
+
+
+
+<scroll-view class='right' scroll-y="true" bindscroll="scroll">
+      <block wx:for="{{goods}}" wx:for-item="goods" wx:key="id">
+        <view class='goods-item' bindtap="toDetailsTap" data-id="{{goods.id}}">
+          <image class='goods-pic' mode='aspectFill' lazy-load="true" src="{{goods.pic}}"></image>
+          <view class='goods-info'>
+            <text >{{goods.name}}</text>
+            <text style='color:red;'>￥{{goods.minPrice}}</text>
+          </view>
+        </view>
+      </block>
+  </scroll-view>

@@ -1,0 +1,17 @@
+/* pages/dhdcl/index.wxss */
+.container{
+  padding:20rpx;
+}
+.mk-item{
+  margin-bottom: 20rpx;
+  padding:10px;
+  background: #fff;
+}
+.van-col.it{
+  line-height: 30px;
+  height:30px;
+}
+.mk-img,.van-card__thumb{
+  height:30px !important;
+  width:30px !important;
+}

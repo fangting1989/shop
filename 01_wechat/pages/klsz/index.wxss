@@ -1,0 +1,4 @@
+/* pages/klsz/index.wxss */
+.btn-container{
+  margin:15px;
+}

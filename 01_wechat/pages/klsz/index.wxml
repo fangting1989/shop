@@ -1,0 +1,12 @@
+<view class="container">
+  <van-cell-group>
+    <van-field value="{{ username }}" required clearable label="老口令" icon="question-o" placeholder="" bind:click-icon="onClickIcon" />
+
+    <van-field value="{{ password }}" clearable type="password" label="新口令" placeholder="" required  />
+    <van-field value="{{ password }}" clearable type="password" label="再次输入" placeholder="" required  />
+  </van-cell-group>
+  <view class="btn-container">
+    <van-button type="primary" custom-class="m10" size="large" bind:click="goMain">登入</van-button>
+
+  </view>
+</view>

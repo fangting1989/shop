@@ -1,0 +1,82 @@
+<view class="container">
+  <view class="mk-item">
+    <van-row>
+      <van-col span="12" class="it">订单编号:CD12313139193</van-col>
+      <van-col span="12"  class="it">订单时间:2019-01-01<van-icon name="edit" bindtap="goEdit" data-databind="{{1}}" /></van-col>
+    </van-row>
+    <van-row>
+      <van-col span="24">
+        <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}" /></van-col>
+    </van-row>
+    <van-row>
+      <van-col span="24">
+        <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}" /></van-col>
+    </van-row>
+    <van-row>
+      <van-col span="24">
+        <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}" /></van-col>
+    </van-row>
+     <van-row>
+      <van-col span="12"  class="it">配送时间:2019-02-01</van-col>
+      <van-col span="12"  class="it">总金额:￥200</van-col>
+    </van-row>
+     <van-row>
+      <van-col span="2">备注</van-col>
+      <van-col span="22">这时打开双卡等哈看的哈卡收到货卡仕达斯柯达哈萨克</van-col>
+     </van-row>
+  </view>
+
+  <view class="mk-item">
+    <van-row>
+      <van-col span="12" class="it">订单编号:CD12313139193</van-col>
+      <van-col span="12"  class="it">订单时间:2019-01-01<van-icon name="edit" bindtap="goEdit" data-databind="{{1}}" /></van-col>
+    </van-row>
+    <van-row>
+      <van-col span="24">
+        <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}" /></van-col>
+    </van-row>
+    <van-row>
+      <van-col span="24">
+        <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}" /></van-col>
+    </van-row>
+    <van-row>
+      <van-col span="24">
+        <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}" /></van-col>
+    </van-row>
+     <van-row>
+      <van-col span="12"  class="it">配送时间:2019-02-01</van-col>
+      <van-col span="12"  class="it">总金额:￥200</van-col>
+    </van-row>
+     <van-row>
+      <van-col span="2">备注</van-col>
+      <van-col span="22">这时打开双卡等哈看的哈卡收到货卡仕达斯柯达哈萨克</van-col>
+     </van-row>
+  </view>
+
+  <view class="mk-item">
+    <van-row>
+      <van-col span="12" class="it">订单编号:CD12313139193</van-col>
+      <van-col span="12"  class="it">订单时间:2019-01-01</van-col>
+    </van-row>
+    <van-row>
+      <van-col span="24">
+        <van-card thumb-class="mk-img" num="2" price="2.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}" /></van-col>
+    </van-row>
+    <van-row>
+      <van-col span="24">
+        <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}" /></van-col>
+    </van-row>
+    <van-row>
+      <van-col span="24">
+        <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}" /></van-col>
+    </van-row>
+     <van-row>
+      <van-col span="12"  class="it">配送时间:2019-02-01</van-col>
+      <van-col span="12"  class="it">总金额:￥200</van-col>
+    </van-row>
+     <van-row>
+      <van-col span="2">备注</van-col>
+      <van-col span="22">这时打开双卡等哈看的哈卡收到货卡仕达斯柯达哈萨克</van-col>
+     </van-row>
+  </view>
+</view>

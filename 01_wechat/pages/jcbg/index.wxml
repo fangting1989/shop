@@ -1,0 +1,131 @@
+<!--pages/jcbg/index.wxml-->
+<view class="container">
+
+  <view class="section">
+    <view bindtap="showRQ">
+      日期
+    </view>
+  </view>
+
+
+  <van-row>
+    <van-col span="8">配送单位</van-col>
+    <van-col span="16">户头小学</van-col>
+  </van-row>
+  <van-row>
+    <van-col span="8">配送日期</van-col>
+    <van-col span="16">2019-01-01</van-col>
+  </van-row>
+  <van-row>
+    <van-col span="8">检验设备</van-col>
+    <van-col span="16">这是我的超级快递数据库圣诞节斯柯达加快速度速度快几十块近段时间肯定是可敬的</van-col>
+  </van-row>
+  <van-row>
+    <van-col span="24">检验结果</van-col>
+  </van-row>
+  <van-row class="mk-item title">
+    <van-col span="5">产品名称</van-col>
+    <van-col span="2">产地</van-col>
+    <van-col span="4">检测项目</van-col>
+    <van-col span="5">检测依据</van-col>
+    <van-col span="3">标准要求</van-col>
+    <van-col span="3">实测数值</van-col>
+    <van-col span="2">判定</van-col>
+  </van-row>
+  <van-row class="mk-item">
+    <van-col span="5">菠菜</van-col>
+    <van-col span="2">基地</van-col>
+    <van-col span="4">农残</van-col>
+    <van-col span="5">GB/T 5009.199</van-col>
+    <van-col span="3">{{flag}}50%</van-col>
+    <van-col span="3">阴性</van-col>
+    <van-col span="2">合格</van-col>
+  </van-row>
+  <van-row class="mk-item">
+    <van-col span="5">菠菜</van-col>
+    <van-col span="2">基地</van-col>
+    <van-col span="4">农残</van-col>
+    <van-col span="5">GB/T 5009.199</van-col>
+    <van-col span="3">
+      <text decode='true'>&le;</text>50%</van-col>
+    <van-col span="3">阴性</van-col>
+    <van-col span="2">合格</van-col>
+  </van-row>
+  <van-row class="mk-item">
+    <van-col span="5">菠菜</van-col>
+    <van-col span="2">基地</van-col>
+    <van-col span="4">农残</van-col>
+    <van-col span="5">GB/T 5009.199</van-col>
+    <van-col span="3">
+      <text decode='true'>&le;</text>50%</van-col>
+    <van-col span="3">阴性</van-col>
+    <van-col span="2">合格</van-col>
+  </van-row>
+  <van-row class="mk-item">
+    <van-col span="5">菠菜</van-col>
+    <van-col span="2">基地</van-col>
+    <van-col span="4">农残</van-col>
+    <van-col span="5">GB/T 5009.199</van-col>
+    <van-col span="3">
+      <text decode='true'>&le;</text>50%</van-col>
+    <van-col span="3">阴性</van-col>
+    <van-col span="2">合格</van-col>
+  </van-row>
+  <view class="item-container">
+    <view class="menu-item">
+      <van-row>
+        <van-col span="12">品名:菠菜</van-col>
+        <van-col span="12">产地:基地</van-col>
+      </van-row>
+      <van-row>
+        <van-col span="8">检测项目:农残</van-col>
+        <van-col span="16">检测依据：GB/T 5009.199</van-col>
+      </van-row>
+      <van-row>
+        <van-col span="8">标准要求：{{flag}}50%</van-col>
+        <van-col span="8">实测数值:菠菜</van-col>
+        <van-col span="8">判定:合格</van-col>
+      </van-row>
+    </view>
+
+    <view class="menu-item">
+      <van-row>
+        <van-col span="12">品名:菠菜</van-col>
+        <van-col span="12">产地:基地</van-col>
+      </van-row>
+      <van-row>
+        <van-col span="8">检测项目:农残</van-col>
+        <van-col span="16">检测依据：GB/T 5009.199</van-col>
+      </van-row>
+      <van-row>
+        <van-col span="8">标准要求：{{flag}}50%</van-col>
+        <van-col span="8">实测数值:菠菜</van-col>
+        <van-col span="8">判定:合格</van-col>
+      </van-row>
+    </view>
+
+ <view class="menu-item active">
+      <van-row>
+        <van-col span="12">品名:菠菜</van-col>
+        <van-col span="12">产地:基地</van-col>
+      </van-row>
+      <van-row>
+        <van-col span="8">检测项目:农残</van-col>
+        <van-col span="16">检测依据：GB/T 5009.199</van-col>
+      </van-row>
+      <van-row>
+        <van-col span="8">标准要求：{{flag}}50%</van-col>
+        <van-col span="8">实测数值:菠菜</van-col>
+        <van-col span="8">判定:合格</van-col>
+      </van-row>
+    </view>
+  </view>
+
+
+
+  <van-popup show="{{ show }}" position="bottom" overlay="{{ false }}" bind:close="onClose">
+    <van-datetime-picker type="date" value="{{ currentDate }}" min-date="{{ minDate }}" bind:input="onInput" />
+  </van-popup>
+
+
+</view>
