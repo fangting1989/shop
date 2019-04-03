@@ -3,14 +3,23 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/main/index",
-    "pages/mainex/index"
+    "pages/mainex/index",
+    "pages/jcbg/index",
+    "pages/bjdcx/index",
+    "pages/dhdcl/index",
+    "pages/lsddcx/index",
+    "pages/lspsdcx/index",
+    "pages/klsz/index",
+    "pages/editorder/index",
+    "pages/product/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#7acfa6",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "We重邮",
-    "backgroundColor": "#7acfa6",
+    "backgroundColor": "#fff",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": true
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
