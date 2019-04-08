@@ -26,11 +26,7 @@ Page({
   },
   //下拉更新
   onPullDownRefresh: function () {
-    if (app._user.is_bind) {
-      this.getCardData();
-    } else {
-      wx.stopPullDownRefresh();
-    }
+    
   },
   onShow: function () {
     var _this = this;
